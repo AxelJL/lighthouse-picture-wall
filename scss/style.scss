@@ -1,31 +1,27 @@
 $primaryColor: #FF0000;
+$mainFont: Verdana;
+$mainSize: 1.5em;
+
 body {
+  font-family: $mainFont;
+  font-size: $mainSize;
   h1 {
   color: $primaryColor;
   }
 }
 
-body {
-  font-family: Verdana;
-  font-size: 1.5em;
-}
-
 #team-members {
   clear: both;
-}
-
-#team-members .member {
-  float: left;
-  /*border: 1px solid gray;*/
-  margin: 10px;
-  padding: 6px;
-}
-
-#team-members .member img {
-  width: 200px;
-  height: 200px;
-}
-
-#team-members .member div.name {
-  text-align: center;  
+    .member {
+      float: left;
+      margin: 10px;
+      padding: 6px;
+        img {
+          width: 200px;
+          height: 200px;
+        }
+        div.name {
+          text-align: center;
+        }
+    }
 }
