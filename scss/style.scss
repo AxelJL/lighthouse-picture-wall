@@ -3,25 +3,59 @@ $mainFont: Verdana;
 $mainSize: 1.5em;
 
 body {
+
   font-family: $mainFont;
   font-size: $mainSize;
+
   h1 {
-  color: $primaryColor;
+    color: $primaryColor;
   }
+
+  h1:hover {
+    color: navy;
+    transition: color 2s ;
+  }
+
 }
 
 #team-members {
   clear: both;
-    .member {
-      float: left;
-      margin: 10px;
-      padding: 6px;
-        img {
-          width: 200px;
-          height: 200px;
-        }
-        div.name {
-          text-align: center;
-        }
+    
+  .member {
+    float: left;
+    margin: 10px;
+    padding: 6px;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20px;
     }
+
+    .normal {
+      position: static;
+    }
+
+    .normal:hover {
+      opacity: 0;
+      transition: opacity 1s;
+    }
+
+    .hover {
+      opacity: 0;
+      position: relative;
+      top: 0px;
+      left: 0px;
+    }
+
+    .hover:hover {
+      opacity: 1;
+    }
+
+    div.name {
+      text-align: center;
+    }
+
+  }
+
 }
